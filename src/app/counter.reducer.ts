@@ -3,7 +3,7 @@ import { createSelector, createFeatureSelector } from "@ngrx/store";
 import * as CounterActions from './counter.actions';
 import { State, AppState } from './model';
 
-export const initialState: State = { val: 0 };
+export const initialState: State = { val: 0 , data:'Byron'};
 
 const _counterReducer = createReducer (initialState,
   on(CounterActions.increment, state => ({...state, val: state.val + 10 })),
